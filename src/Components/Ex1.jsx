@@ -7,16 +7,19 @@ function Ex1() {
         tela = "vamos dividir?"
         qntBala = (qntBala - 1)
 
-    }else {
+    } else {
         tela = "comi tudo sozinho"
 
     }
 
     return (
+        <div className="Exercicio">
             <p>
-               Ex1 = {tela}
+                Ex1 = {tela}
 
             </p>
+        </div>
+
 
     )
 }
