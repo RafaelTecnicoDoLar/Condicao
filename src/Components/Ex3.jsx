@@ -2,12 +2,10 @@ import { useState } from "react";
 
 function Ex3() {
 
-    const [tela, setTela] = useState();
-    let nome;
+    const [nome, setNome] = useState();
 
     function BotaoEnviar() {
-        alert("seu nome é: " + { nome });
-        setTela(nome);
+        alert(`Saudações, seu nome é ${nome}`);
 
     }
     return (
@@ -17,13 +15,10 @@ function Ex3() {
 
             </p>
 
-            <input type='text' placeholder="Primeiro Nome" value={nome} />
+            <input type='text' name="Primeiro Nome" placeholder="Primeiro Nome" value={nome} onChange={(e) => setNome(e.target.value)}/>
 
             <button onClick={BotaoEnviar}> Enviar</button>
 
-            <p>
-                Seu nome é: {tela}
-            </p>
         </div>
 
     )

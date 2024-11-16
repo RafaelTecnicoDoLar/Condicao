@@ -4,11 +4,11 @@ function Ex1() {
 
     let tela;
     if (qntBala >= 2) {
-        tela = "vamos dividir?"
+        tela = `temos ${qntBala} balas, vamos dividir?`
         qntBala = (qntBala - 1)
 
     } else {
-        tela = "comi tudo sozinho"
+        tela = `Ce é loco, só tenho ${qntBala} balas, vo come tudo sozinho`
 
     }
 
